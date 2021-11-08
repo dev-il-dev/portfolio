@@ -1,178 +1,377 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/b3855dec38.js" crossorigin="anonymous"></script>
+<HTML lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SARVESH IIESTS </title>
 
-    <title>SARVESH DUBEY</title>
-    <style> 
-        /* Style the body */
-        body { 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          margin: 0;
-        }
 
-        .sidenav{
-        height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 40%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-image: url(NAVPICSD.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0%;
-  }
+        <style>
+* {
 
-        /* Header/Logo Title */
-        
-        /* Page Content */
-        .INTRO {padding-top: 12%;
-        margin-left: 50%;
-        text-align: center;
-        padding-bottom: 20%;
-        
-     color: rgb(0, 2, 8);}
+  margin: 0;
+  padding: 0;
+}
+header { padding: 1%;
+ 
+           
+           letter-spacing: 2px;
+           word-spacing: 8px;
+           background-color:black ;
 
-     .ABOUT {padding-right:35%;
-     padding-left: 42%;
-         text-align:left;
-         padding-bottom: 0%;
-     }
-     .expertisebar {display: grid;
-        }
-        .bar {
-            background-color: rgba(69, 71, 71, 0.918);
-            margin-left: 42%;
-            padding-top:2%;
-        }
+}
+     
+ header p{ color: white;
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+           display: inline;
+         }
+.topnav{ display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  text-align: right;
+  float: right;
+  font-size: medium;
+  margin-right: 1%;
+  color: white;
 
-        <!--READ-->
-        input[type=text], select, textarea {
-  width: 50%;
-  padding: 0%;
-  border: 1% solid #ccc;
-  border-radius: 2%;
+}
+#summary{ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(125, 130, 133);
+text-align: center;
+padding: 3%;
+padding-bottom: 3%;
+color: white;
+  
+}   
+
+*, *:before, *:after {
   box-sizing: border-box;
-  margin-top: 2%; margin-bottom: 4%;
-  margin-right: 60%; margin-right: 20%;
-  resize: vertical;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;margin-left: 42%;
-  padding: 1% 1%;
-  border: none;
-  border-radius: 10%;
-  cursor: pointer;
+body {
+
+  font-size: 12px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;margin-left: 42%;margin-right: 50%; margin-bottom: 1%;
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;margin-left: 42%;margin-right: 2%;
-  padding: 2%; margin-bottom: 30px; padding-bottom: 2%;
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
 }
-    
-    
-        </style>
-        </head>
-        <body>
-            <div class="sidenav"></div>
-            <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-        
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+
+                </style>
+
+         
+    </head>
    
-    <div class="INTRO">
-        <h1 style="font-size: 400%;">Sarvesh Dubey</h1>
-        <p style="color: gray; padding-bottom: 2%;">Writer, Photographer and Web Designer.</p>
-        <button style="padding:1% 2%; background-color: rgb(236, 236, 236);  border-radius: 2%; font-weight: 300; color: rgb(100, 100, 100);"><i class="fa fa-download"></i> Download Resume
-        </button>
-      </div>
-      <div class="ABOUT">
-          <h1 style="color: rgb(129, 129, 129); font-size: 200%;">About</h1> </div>
-              <p style="padding-left: 42%; padding-right: 2%; color:gray; padding-bottom: 0%;padding-top: 0%; font-size: 100%; text-align: justify;">EVER SINCE MY SCHOOL DAYS, I HAVE BEEN INTERESTED IN THE THEORETICAL
-                FRAMEWORKS IN MATHEMATICS AND SCIENCES, WHICH DRIVE THE DIGITAL 
-                WORLD. SEEING HOW THE ELECTRICAL DEVICES 
-                WERE BUILT AND THE VARIOUS PROCESSES INVOLVED, INFUSED A DESIRE IN ME 
-                TO BE PART OF THIS PROCESS. CURRENTLY I AM AN UNDERGRADUATE STUDENT OF ELECTRONICS ENGINEERING AT IIEST, SHIBPUR. SINCE THE FIRST YEAR OF MY COLLEGE, I HAVE BEEN WORKING ON AURDINOS AND OTHER SYSTEMS. I HAVE LEARNT THAT COMPUTER SCIENCE IS INTEGRAL PART OF ANY MODERN DIGITAL DEVICE HENCE I HAVE WORKED ON MY PROGRAMMING SKILLS AND HAVE DONE HANDFUL OF PROJECTS ON IMAGE PROCESSING AND MACHINE LEARNING.
-                
-                I AM HIGHLY MOTIVATED AND EAGER TO WORK AND LEARN. I HAVE WORKED UNDER PROF. PRASANTA KUMAR GHOSH OF IISC BANGALORE FOR A PROJECT ON IMAGE PROCESSING AND THEREFORE AM FAMILIAR TO BASIC WORKFLOW OF RESEARCH PROJECTS.</p>
+    <body>
+        <header>
+           <p> SARVESH DUBEY  </p>
+           <div class="topnav">
+            <a >about</a>
+            <a >academics</a>
+            <a >portfolio</a>
+            <a>contact-me</a>
           </div>
-          <div class="skills">
-              <h1 style="padding-top: 5%;padding-left:42%;color: rgb(129, 129, 129); font-size: 200%; padding-bottom: 0px;">My Skills</h1>
-                 </div>
-                 <div class="expertisebar">
-                     <h1 style="color: rgb(134, 134, 134); padding-left: 42%; padding-top: 0%; font-size:150%;letter-spacing: 4px;font-weight: 500;padding-bottom: 0px">C/C++/PYTHON</h1>
-                     <div class="bar" style="margin-right: 4%;"></div>
-                     <div class="expertisebar">
-                        <h1 style="color: rgb(134, 134, 134); padding-left: 42%; padding-top: 10px;font-size: 150% ;letter-spacing:4px;font-weight: 500;">WEB DESIGN</h1>
-                       
-                        <div class="bar" style="margin-right: 8%;"></div> <div class="expertisebar">
-                            <h1 style="color: rgb(134, 134, 134); padding-left: 42%; padding-top: 0%; font-size: 150%;letter-spacing: 4px;font-weight: 500;">IMAGE AND SIGNAL PROCESSING</h1>
-                            <div class="bar" style="margin-right: 2%;"></div><div class="expertisebar">
-                                <h1 style="color: rgb(134, 134, 134); padding-left: 42%; padding-top: 0%; font-size: 150%;letter-spacing: 4px;font-weight: 500;">LEADERSHIP AND COMMUNICATIION</h1>
-                                <div class="bar" style="margin-right: 2%;margin-bottom: 5%;"></div>           
-                                
+        </header>
+      
+        <div id=summary style="background-image: url(code2head.jpg); background-size: 1600px;"> 
+                <a href= "8thlogin.html"><img src="profile.jpg" alt= "Avatar" style=" height: 140px; width:150px; border-radius: 50%; border-color: rgb(17, 13, 13);"></a>
+                <p style="margin-top: 1%; font-size: 48px; font-weight: 600;  text-decoration-color: #ea1d6f; text-decoration:dotted;">SARVESH DUBEY</p>
+                <p style="color: rgb(255, 255, 255); font-size: 24px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 400;">Engineering Undergrad</p>
+                <p style="color: rgb(255, 255, 255); font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 400;">Indian Institute of Engineering Science and Technology, Shibpur</p>
 
-                                <!--READ-->
+                
+        </div>
+ <div id="about" style="padding: 12%; padding-bottom: 37%;">  <p style="font-size: 102px; margin-left: 5%; font-family:Arial, Helvetica, sans-serif; font-weight:500;"> about.</p>
+  <p style="margin-left: 6%;">Hey! I am Sarvesh.</p>
 
-                                <h3 style="padding-left: 42%;">Lets get in touch. Send me a message:</h3>
+ </div>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+ <div class="background" style=" background-image: url(collegebg.jpg); background-size: cover;">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>ME</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +91 9721710441</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value="">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-
-    <label for="subject"></label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
+  </div>
+</div>
 
 </div>
 
-<img src="map1.jpg" style="width:56%; height: 40%; margin-left: 42%; margin-bottom: 0%;">
-<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:5%">
-  <h2>Contact Me</h2>
-  <hr class="w3-opacity">
 
-  <div class="w3-section" style="padding-left: 42%; font-size: 120%; color: rgb(104, 103, 103); font-weight: 200; margin-bottom: 2%;">
-    <h2 style="padding-bottom: 5%; font-weight: 400;">Contact Me</h1>
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bhubaneswar, India</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9721710441</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sarvesh.iiests@mail.com</p>
-  </div>
-<div class="foot" style="background-color: rgb(173, 170, 170); margin-left: 40%; padding-bottom: 10%; padding-left: 25%; padding-top:  10%; margin-bottom: 0%; font-size: 140%;">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p style="font-size: 50%;font-weight: 500;">Designed and Owned by SARVESH</p> </div>
-                            </body>
+<div id="footer" style=" background-color:rgb(255, 255, 255); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #afadae; padding-top: 2%;">
+  <img src="dino.png" style="height: 250px; display: inline; float: left;"> 
+  <p style="margin-top: 7%; color: black; text-shadow: #ea1d6f; text-decoration-style: wavy; font-weight: 600; font-size: x-large;">YOU ARE STILL HERE?</p>
+  <p style="margin-left: 70%; margin: top 6%;">sarvesh.iiests@gmail.com</h3>
+    <p style="margin-left: 70%;">Indian Institute of Engineering Science and Technology, Shibpur</h3>
+  <p style="margin-left: 70%;">Website created and managed by SARVESH DUBEY</h3>
+  
+  <p style="margin-left:70%; padding-bottom: 3%;"> © 2021, ALL RIGHTS RESERVED</p> </img>
+   
 
+
+</div>
+
+      </body>
 </html>
